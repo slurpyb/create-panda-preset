@@ -1,28 +1,54 @@
 {
-  "name": "non-monorepo",
+  "name": "create-panda-preset",
   "version": "0.1.0",
-  "private": true,
-  "packageManager": "pnpm@8.14.0",
+  "private": false,
+  "packageManager": "pnpm@10.5.2",
+  "author": "Jordan Sweeting <slurpyb@fastmail.com>",
+  "description": "Starting point for a Panda CSS preset ",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slurpyb/create-panda-preset.git"
+  },
+  "bugs": {
+    "url": "https://github.com/slurpyb/create-panda-preset/issues"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
-    "check-types": "tsc --noEmit",
-    "lint": "next lint"
+    "clean": "rm -rf node_modules && rm -rf dist",
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "format": "biome format ./src/* --write",
+    "lint": "biome lint ./src/*",
+    "check": "biome check ./src/* --write"
   },
   "dependencies": {
-    "next": "15.1.7",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
     "turb": "^0.1.2"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3",
-    "@types/node": "^22",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "15.1.7",
-    "typescript": "^5"
+    "@biomejs/biome": "1.9.4",
+    "@pandacss/dev": "^0.53.0",
+    "@pandacss/types": "^0.53.0",
+    "@turbo/gen": "^2.4.4",
+    "@types/node": "^22.13.8",
+    "tsup": "^8.4.0",
+    "turbo": "^2.4.4",
+    "typescript": "^5.8.2"
+  },
+  "peerDependencies": {
+    "@pandacss/dev": ">=0.51.0"
   }
 }
