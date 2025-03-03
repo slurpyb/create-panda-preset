@@ -1,6 +1,8 @@
-import { Recursive, type SlotRecipeDefinition } from '@pandacss/types';
-import { exampleSlotComponent } from './example-component.slot-recipe';
+import type {Recursive, SlotRecipeDefinition} from '@pandacss/types';
+import {navbar} from './navbar.slot-recipe';
+import {header} from './header.slot-recipe';
 
 export const slotRecipes: Recursive<SlotRecipeDefinition> = {
-	exampleSlotComponent,
+    navbar,
+    header,
 };

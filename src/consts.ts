@@ -1,5 +1,5 @@
-import { type PresetOptions } from './options';
+import type {PresetOptions} from './options';
 
 export const defaultOptions: PresetOptions = {
-	// Put your default options heres
+    primaryColor: '#ff0000',
 };

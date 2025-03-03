@@ -1,16 +1,14 @@
 {
-  "name": "create-panda-preset",
-  "version": "0.1.0",
-  "private": false,
+  "name": "@repo/preset-velveteen-disco",
+  "version": "0.0.0",
+  "private": true,
   "packageManager": "pnpm@10.5.2",
   "author": "Jordan Sweeting <slurpyb@fastmail.com>",
   "description": "Starting point for a Panda CSS preset ",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/slurpyb/create-panda-preset.git"
-  },
-  "bugs": {
-    "url": "https://github.com/slurpyb/create-panda-preset/issues"
+    "url": "git+https://github.com/slurpyb/velveteen-disco.git",
+    "path": "packages/preset-velveteen-disco"
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -44,6 +42,7 @@
     "@pandacss/types": "^0.53.0",
     "@turbo/gen": "^2.4.4",
     "@types/node": "^22.13.8",
+    "rampensau": "^0.15.0",
     "tsup": "^8.4.0",
     "turbo": "^2.4.4",
     "typescript": "^5.8.2"

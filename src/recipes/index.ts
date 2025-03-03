@@ -1,6 +1,6 @@
-import { Recursive, type RecipeDefinition } from '@pandacss/types';
-import { exampleComponent } from './example-component.recipe';
+import type {Recursive, RecipeDefinition} from '@pandacss/types';
+import {link} from './link.recipe';
 
 export const recipes: Recursive<RecipeDefinition> = {
-	exampleComponent,
+    link,
 };

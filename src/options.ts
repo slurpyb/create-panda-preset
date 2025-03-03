@@ -1,1 +1,3 @@
-export interface PresetOptions {}
+export interface PresetOptions {
+    primaryColor: string;
+}
