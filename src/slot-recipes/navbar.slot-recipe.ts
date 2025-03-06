@@ -14,7 +14,6 @@ export const navbar = defineSlotRecipe({
         root: {
             display: 'grid',
             gridArea: 'header',
-            fontFamily: 'display',
 
             // color: 'white',
             // paddingBlock: 'clamp(1rem, 3%, 1.5rem)',
@@ -42,6 +41,7 @@ export const navbar = defineSlotRecipe({
             flexDirection: 'row',
             justifyContent: 'space-around',
             gap: '1rem',
+            fontFamily: 'body',
             alignItems: 'center',
             colorPalette: 'gray',
         },
