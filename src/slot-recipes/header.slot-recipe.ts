@@ -11,17 +11,17 @@ export const header = defineSlotRecipe({
             gridTemplateAreas: ['"header"'],
 
             maxHeight: '100vh',
-            backgroundColor: 'hsl(200, 74%, 12%, 0.7)',
+            // backgroundColor: 'hsl(200, 74%, 12%, 0.7)',
             overflow: 'hidden',
-            bgGradient:
-                'linear-gradient(to top, var(--colors-black), transparent, transparent, transparent, transparent, transparent)',
-            backgroundBlendMode: 'overlay',
+            // bgGradient:
+            //     'linear-gradient(to top, var(--colors-black), transparent, transparent, transparent, transparent, transparent)',
+            // backgroundBlendMode: 'overlay',
         },
         inner: {
             gridArea: 'header',
         },
         content: {
-            display: 'grid',
+            // display: 'grid',
             // display: 'flex',
             // flexDirection: 'row',
             // justifyContent: 'space-around',
